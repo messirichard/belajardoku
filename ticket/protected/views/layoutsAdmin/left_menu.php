@@ -27,7 +27,8 @@
             <li><a href="<?php echo CHtml::normalizeUrl(array('/admin/order/create'));?>"> <span class= "fa fa-facebook"></span><?php echo Tt::t('admin','Gerai')?></a></li>     
         <?php endif ?>  
         <?php if($login_admin['type'] != 'gerai'): ?>
-            <li class="dropdown">
+            <li><a href="<?php echo CHtml::normalizeUrl(array('/admin/produk/index')); ?>">Produk</a></li>
+            <!-- <li class="dropdown">
             <a href="<?php echo CHtml::normalizeUrl(array('/admin/ticket/index')); ?>"><span class="fa fa-ticket"></span> <?php echo Tt::t('admin', 'Tickets') ?></a>
             <ul>
                 <li><a href="<?php echo CHtml::normalizeUrl(array('/admin/blog/index')); ?>">Event</a></li>
@@ -40,7 +41,7 @@
             <li><a href="<?php echo CHtml::normalizeUrl(array('/admin/video/index')); ?>"><span class="fa fa-image"></span> <?php echo Tt::t('admin', 'Video') ?></a></li>
 
             <li><a href="<?php echo CHtml::normalizeUrl(array('setting/index')); ?>"><span class="fa fa-cogs"></span> <?php echo Tt::t('admin', 'General Setting') ?></a>
-            </li>
+            </li> -->
         <?php endif ?>
 
         
