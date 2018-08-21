@@ -209,7 +209,7 @@ class HomeController extends Controller
 			$itemDetails[] = $model->ticket_name.','.round($model->ticket_price).'.00,'.round($model->qty).','.round($model->total).'.00';
 $sharedkey = 'W2K2d9M6v9k6';
 $mallid = '10275677';
-$sessionid = md5(rand(1000000000,999999999999999));
+$sessionid = md5(rand(100,10000000));
 $model->insertId = $sessionid;
 $model->save(false);
 $words = sha1(round($model->total).'.00'.$mallid.$sharedkey.$model->no_invoice)
